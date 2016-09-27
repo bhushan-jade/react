@@ -6,7 +6,7 @@ var open = require('gulp-open'); //Open a URL in web browser
 var browserify = require('browserify'); //bundles js
 var reactify = require('reactify'); //Transform React JSX to Js
 var source = require('vinyl-source-stream'); // Use Conventional text Streams with gulp
-
+var concat = require('gulp-concat'); //Concatenates files
 //Configs
 
 var config = {
@@ -15,6 +15,10 @@ var config = {
     paths: { //globs
         html: './src/*.html', //any html file in src to be matched. anything with match html
         js: './src/**/*.js',
+        css: [
+      		'node_modules/bootstrap/dist/css/bootstrap.min.css',
+      		'node_modules/bootstrap/dist/css/bootstrap-theme.min.css'
+    		],
         dist: './dist',
         mainJs: './src/main.js'
     }
@@ -76,7 +80,7 @@ gulp.task('html', function () {
         .pipe(connect.reload())
 });
 
-
+//js task
 gulp.task('js', function () {
     browserify(config.paths.mainJs) //bundle js
         .transform(reactify) //JSX to js
@@ -87,14 +91,24 @@ gulp.task('js', function () {
         .pipe(connect.reload()) //reload on changes
 });
 
+
+//css task
+
+gulp.task('css', function() {
+	gulp.src(config.paths.css)
+		.pipe(concat('bundle.css'))
+		.pipe(gulp.dest(config.paths.dist + '/css'));
+});
+
+
 //watcher this will watch files for any changes and reload browser
 
-gulp.task('watcher', function () {
+gulp.task('watch', function () {
     gulp.watch(config.paths.html, ['html']);
     gulp.watch(config.paths.js, ['js']);
 });
 
 
 //default task
-gulp.task('default', ['html', 'js', 'open', 'watcher']);
+gulp.task('default', ['html', 'js', 'css','open', 'watch']);
 
