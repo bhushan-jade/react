@@ -30,13 +30,18 @@
         * `vinyl-source-stream` Use Conventional text Streams with gulp
 5. Bootstrap, Jqyery, Gulp concat
 
-    * `npm install --save bootstrap jquery gulp-concat`
+    *``npm install --save bootstrap jquery gulp-concat`
         * `bootstrap`
         * `jquery`
         * `gulp-concat` concat files
     
 6. ESLint => notifiy errors
     * `npm install --save gulp-eslint`
-    * `npm install --save gulp-eslint@0.15.0` (optional if above doesnot work)
+    * `npm install --save gulp-eslint@0.15.0` (optional)
+    
+7. React Core Libraries `npm install --save react@0.13.3 react-router@0.13.3 flux@2.0.3`
+    
+    
+
 
 
