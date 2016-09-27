@@ -3,11 +3,11 @@
 ##IDE (optional)
 * https://nuclide.io/docs/editor/setup/#linux
 
-## Prerequisites
+## Prerequisites (Need to Have Atom already installed With Git too)
 
 1. Node.js install `npm install nodejs`
 
-##### Miscellenous : (Need to Have Atom already installed With Git too)
+##### Miscellenous : 
 ```sudo update-alternatives --install /usr/bin/node node /usr/bin/nodejs 10 ```
 
 2. NPM
