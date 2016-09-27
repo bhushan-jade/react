@@ -1,6 +1,5 @@
-# react
 # React POC.
- 
+
 ##IDE (optional)
 * https://nuclide.io/docs/editor/setup/#linux
 
@@ -29,5 +28,15 @@
         * `browserify` bundles js   
         * `reactify` Transform React JSX to Js
         * `vinyl-source-stream` Use Conventional text Streams with gulp
+5. Bootstrap, Jqyery, Gulp concat
+
+    *``npm install --save bootstrap jquery gulp-concat`
+        * `bootstrap`
+        * `jquery`
+        * `gulp-concat` concat files
     
+6. ESLint => notifiy errors
+    * `npm install --save gulp-eslint`
+    * `npm install --save gulp-eslint@0.15.0` (optional if above doesnot work)
+
 
