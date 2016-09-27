@@ -10227,11 +10227,8 @@ return jQuery;
 
 $ = jQuery = require('jquery');  // ref jquery as $ or jquery. global for bootstrap
 
-console.log($);
-
 var App = console.log("Hellow world from Browsify");
 
-console.log(App);
 module.exports = App;
 
 },{"jquery":1}]},{},[2]);
