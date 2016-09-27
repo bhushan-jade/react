@@ -1,0 +1,27 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "React poc",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/bhushanjade7/react.git"
+  },
+  "author": "Bhushan Jade",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/bhushanjade7/react#readme",
+  "dependencies": {
+    "browserify": "^13.1.0",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^2.2.0",
+    "gulp-open": "^2.0.0",
+    "reactify": "^1.1.1",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "devDependencies": {
+    "gulp-connect": "^2.2.0"
+  }
+}
