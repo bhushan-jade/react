@@ -7,7 +7,7 @@
 
 1. Node.js install `npm install nodejs`
 
-##### Miscellenous :
+##### Miscellenous : (Need to Have Atom already installed With Git too)
 ```sudo update-alternatives --install /usr/bin/node node /usr/bin/nodejs 10 ```
 
 2. NPM
