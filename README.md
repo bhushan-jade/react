@@ -30,7 +30,7 @@
         * `vinyl-source-stream` Use Conventional text Streams with gulp
 5. Bootstrap, Jqyery, Gulp concat
 
-    *``npm install --save bootstrap jquery gulp-concat`
+    *`npm install --save bootstrap jquery gulp-concat`
         * `bootstrap`
         * `jquery`
         * `gulp-concat` concat files
