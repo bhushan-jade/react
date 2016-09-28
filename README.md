@@ -1,9 +1,9 @@
 # React POC.
 
-##IDE (optional)
+##IDE (Need to Have Atom already installed With Git too) (optional) 
 * https://nuclide.io/docs/editor/setup/#linux
 
-## Prerequisites (Need to Have Atom already installed With Git too)
+## Prerequisites 
 
 1. Node.js install `npm install nodejs`
 
