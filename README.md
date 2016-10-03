@@ -40,6 +40,10 @@
     * `npm install --save gulp-eslint@0.15.0` (optional)
     
 7. React Core Libraries `npm install --save react@0.13.3 react-router@0.13.3 flux@2.0.3`
+
+
+#### React Flux Overview :
+	* https://facebook.github.io/flux/docs/overview.html
     
     
 
